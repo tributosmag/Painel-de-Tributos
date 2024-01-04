@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Federal</title>
+        <link rel="shortcut icon" href="imagens/favicon.webp" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="medias-query.css">
+</head>        
+    <body> 
+      <header>
+        <h1>Legislações Federais</h1>
+      </header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="imagens/Logo-mag.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active light" aria-current="page" href="#" data-tabela="tabela-irpj">IRPJ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active light" aria-current="page" href="#" data-tabela="tabela-csll">CSLL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active light" aria-current="page" href="#" data-tabela="tabela-pis">PIS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active light" aria-current="page" href="#" data-tabela="tabela-cofins">COFINS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active light" aria-current="page" href="#" data-tabela="tabela-inss">INSS</a>
+              </li>
+              <li>
+                <a class="nav-link active light" aria-current="page" href="#" data-tabela="tabela-inss">Incentivos Fiscais</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="search" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button id="search-btn" id="limpar-pesquisa" class="btn btn btn-outline-primary" type="submit">Pesquisar</button>
+            </form>        
+          </div>
+        </div>
+      </nav>
+      <main>         
+          <table class="table tabela-menu table-bordered" id="tabela-irpj" style="display:none">
+                <thead class="table-info">
+                  <th>Legislação</th>
+                  <th>Ementa</th>
+                  <th>Resumo</th>
+                  <th>Palavras-chaves</th>
+                </thead>
+                <tbody>
+                    <tr><td><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/D9580.htm">Decreto 9.580/18</a></td><td>Regulamenta a tributação, a fiscalização, a arrecadação e a administração do Imposto sobre a Renda e Proventos de Qualquer Natureza.</td><td>Traz o regulamento do imposto de renda e suas alterações, etc etc</td><td>Imposto de renda; IR; IRRF;</td></tr>
+                    <tr><td><a target="_blank" href="https://www2.camara.leg.br/legin/fed/lei/2023/lei-14564-4-maio-2023-794151-norma-pl.html">Lei nº 14.564, de 4 de Maio de 2023</a></td><td>Altera a Lei nº 12.715, de 17 de setembro de 2012, para prorrogar a faculdade de dedução doimposto sobre a renda dos valores correspondentes a doações e patrocínios em prol de ações e serviçosdo Programa Nacional de Apoio à Atenção Oncológica (Pronon) e do Programa Nacional de Apoio à Atenção da Saúde da Pessoa com Deficiência (Pronas/PCD).</td><td>Dedução do IR dos valores correspondentes a doações e patrocínios em prol de ações e serviços do Pronon e Pronas</td><td>Imposto de renda; IR; Pronon; Pronas</td></tr>
+                    <tr><td><a target="_blank" href="https://www2.camara.leg.br/legin/fed/lei/2023/lei-14537-28-fevereiro-2023-793802-norma-pl.html">Lei nº 14.537, de 28 de Fevereiro de 2023</a></td><td>Altera a Lei nº 12.249, de 11 de junho de 2010, para dispor sobre a alíquota do imposto sobre a renda retido na fonte incidente sobre as operações a que se refere; e revoga dispositivos das Leis nºs 12.810, de 15 de maio de 2013, 12.844, de 19 de julho de 2013, e 13.315, de 20 de julho de 2016.</td><td>Reduz a alíquota do IRRF incidente sobre os valores pagos, creditados, entregues, empregados ou remetidos para pessoa física ou jurídica residente ou domiciliada no exterior, destinados à cobertura de gastos pessoais, no exterior, de pessoas físicas residentes no País, em viagens de turismo, de negócios, de serviço ou de treinamento ou em missões oficiais, até o limite de R$ 20.000,00 (vinte mil reais) ao mês</td><td>Imposto de renda; IR; IRRF; Exterior;</td></tr>
+                    <tr><td><a target="_blank" href="https://www2.camara.leg.br/legin/fed/lei/2023/lei-14596-14-junho-2023-794297-norma-pl.html">Lei nº 14.596, de 14 de Junho de 2023</a></td><td>Dispõe sobre regras de preços de transferência relativas ao Imposto sobre a Renda das PessoasJurídicas (IRPJ) e à Contribuição Social sobre o Lucro Líquido (CSLL); altera as Leis nºs 9.430, de 27 dedezembro de 1996, 12.973, de 13 de maio de 2014, e 12.249, de 11 de junho de 2010; e revogadispositivos das Leis nºs 3.470, de 28 de novembro de 1958, 4.131, de 3 de setembro de 1962, 4.506, de30 de novembro de 1964, 8.383, de 30 de dezembro de 1991, 10.637, de 30 de dezembro de 2002, 10.833, de 29 de dezembro de 2003, 12.715, de 17 de setembro de 2012, 12.766, de 27 de dezembro de2012, e 14.286, de 29 de dezembro de 2021, e do Decreto-Lei nº 1.730, de 17 de dezembro de 1979.</td><td>Dispõe sobre regras de preços de transferência relativas ao IRPJ e à CSLL</td><td>Imposto de Renda; IRPJ; CSLL; Preço de Transferência; Transfer</td></tr>
+                    <tr><td><a target="_blank" href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=81268">INSTRUÇÃO NORMATIVA RFB Nº 1700, DE 14 DE MARÇO DE 2017</a></td><td>Dispõe sobre a determinação e o pagamento do imposto sobre a renda e da contribuição social sobre o lucro líquido das pessoas jurídicas e disciplina o tratamento tributário da Contribuição para o PIS/Pasep e da Cofins no que se refere às alterações introduzidas pela Lei nº 12.973, de 13 de maio de 2014.</td><td>Dispões sobre e o pagamento do IRPJ e da CSLL e disciplina o tratamento tributário da Contribuição para o PIS/Pasep e da Cofins no que se refere às alterações introduzidas pela Lei nº 12.973, de 13 de maio de 2014</td><td>Imposto de Renda; Contribuição Social; IRPJ; CSLL; PIS; Cofins</td></tr>
+                    <tr><td><a target="_blank" href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=122002#2311139">INSTRUÇÃO NORMATIVA RFB Nº 2055, DE 06 DE DEZEMBRO DE 2021</a></td><td>Dispõe sobre restituição, compensação, ressarcimento e reembolso, no âmbito da Secretaria Especial da Receita Federal do Brasil.></td><td>Dispõe sobre restituição, compensação, ressarcimento e reembolso, no âmbito da Secretaria Especial da Receita Federal do Brasil.</td><td>Compensação; Restituição; Ressarcimento; Reembolso</td></tr>
+                  </tbody>
+            </table>
+    
+        <table class="table tabela-menu table-bordered" id="tabela-csll" style="display:none">
+          <thead class="table-info">
+            <th>Legislação</th>
+            <th>Ementa</th>
+            <th>Resumo</th>
+            <th>Palavras-chaves</th>
+          </thead>
+          <tbody>
+            <tr><td><a target="_blank" href="https://www2.camara.leg.br/legin/fed/lei/2004/lei-11051-29-dezembro-2004-535258-norma-pl.html">LEI Nº 11.051, DE 29 DE DEZEMBRO DE 2004</a></td><td>Dispõe sobre o desconto de crédito na apuração da Contribuição Social sobre o Lucro Líquido - CSLL e da Contribuição para o PIS/PASEP e COFINS não cumulativas e dá outras providências.</td><td>Crédito relativo à Contribuição Social sobre o Lucro Líquido - CSLL, à razão de 25% (vinte e cinco por cento) sobre a depreciação contábil de máquinas, aparelhos, instrumentos e equipamentos, novos, relacionados em regulamento, adquiridos entre 1º de outubro de 2004 e 31 de dezembro de 2010,</td><td>Contribuição Social; Créditos; Depreciação; CSLL</td></tr>
+                      <tr><td><a target="_blank" href="https://www2.camara.leg.br/legin/fed/lei/1996/lei-9316-22-novembro-1996-349078-publicacaooriginal-1-pl.html">LEI Nº 9.316, DE 22 DE NOVEMBRO DE 1996</a></td><td>Altera a legislação do imposto de renda das pessoas jurídicas, bem como da contribuição social sobre o lucro líquido, e dá outras providências</td><td>Os valores da contribuição social a que se refere este artigo, registrados como custo ou despesa, deverão ser adicionados ao lucro líquido do respectivo período de apuração para efeito de determinação do lucro real e de sua própria base de cálculo.</td><td>Contribuição Social;Lucro Real; CSLL</td></tr>
+                      <tr><td><a target="_blank" href="https://www2.camara.leg.br/legin/fed/lei/1988/lei-7689-15-dezembro-1988-368252-norma-pl.html">LEI Nº 7.689, DE 15 DE DEZEMBRO DE 1988</a></td><td>Institui contribuição social sobre o lucro das pessoas jurídicas e dá outras providências.</td><td>Fica instituída contribuição social sobre o lucro das pessoas jurídicas, destinada ao financiamento da seguridade social</td><td>Contribuição Social;CSLL</td></tr>
+                      <tr><td><a target="_blank" href="https://www2.camara.leg.br/legin/fed/lei/1995/lei-9249-26-dezembro-1995-349062-norma-pl.html">LEI Nº 9.249, DE 26 DE DEZEMBRO DE 1995</a></td><td>Altera a Legislação do Imposto de Renda das Pessoas Jurídicas, bem como da Contribuição Social sobre o Lucro Líquido, e dá outras providências.</td><td>As bases de cálculo e o valor dos tributos e contribuições federais </td><td>Contribuição Social;CSLL; Tributos</td></tr>
+                      <tr><td><a target="_blank" href="https://www2.camara.leg.br/legin/fed/lei/2022/lei-14446-2-setembro-2022-793192-norma-pl.html">LEI Nº 14.446, DE 2 DE SETEMBRO DE 2022</a></td><td>Altera a Lei nº 7.689, de 15 de dezembro de 1988, que institui a contribuição social sobre o lucro das pessoas jurídicas.</td><td>As alíquotas da contribuição de que tratam os incisos I e II-A do caput deste artigo serão de 16% (dezesseis por cento) e de 21% (vinte e um por cento), respectivamente, até 31 de dezembro de 2022." </td><td>Alíquota; Contribuição Social; CSLL</td></tr>
+          </tbody>
+        </table>
+        
+        <table class="table tabela-menu table-bordered" id="tabela-pis" style="display:none">
+          <thead class="table-info">
+            <th>Legislação</th>
+            <th>Ementa</th>
+            <th>Resumo</th>
+            <th>Palavras-chaves</th>
+          </thead>
+          <tbody>
+            <tr><td><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/leis/2002/l10637.htm">Lei nº 10.637</a></td><td>Dispõe sobre a não-cumulatividade na cobrança da contribuição para os Programas de Integração Social (PIS) e de Formação do Patrimônio do Servidor Público (Pasep), nos casos que especifica; sobre o pagamento e o parcelamento de débitos tributários federais, a compensação de créditos fiscais, a declaração de inaptidão de inscrição de pessoas jurídicas, a legislação aduaneira, e dá outras providências.</td><td>Não-cumulatividade Pis/Pasep, pagamento e parcelamento de débitos tributários federais, compensação de créditos fiscais, a declaração de inaptidão de inscrição de pessoas jurídicas, a legislação aduaneira, e dá outras providências.</td><td>PIS; NÃO-CUMULATIVIDADE; PAGAMENTO; PARCELAMENTO; COMPENSAÇÃO; DECLARAÇÃO</td></tr>
+            <tr><td><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.865.htm#:~:text=LEI%20N%C2%BA%2010.865%2C%20DE%2030%20DE%20ABRIL%20DE%202004&text=Disp%C3%B5e%20sobre%20a%20Contribui%C3%A7%C3%A3o%20para,servi%C3%A7os%20e%20d%C3%A1%20outras%20provid%C3%AAncias.">Lei nº 10.865</a></td><td>Dispõe sobre a Contribuição para os Programas de Integração Social e de Formação do Patrimônio do Servidor Público e a Contribuição para o Financiamento da Seguridade Social incidentes sobre a importação de bens e serviços e dá outras providências.</td><td>Pis/Pasep e Cofins na importação de bens e serviços</td><td>PIS/PASEP; IMPORTAÇÃO; BENS; SERVIÇOS</td></tr>
+            <tr><td><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/leis/l9718compilada.htm">LEI Nº 9.718</a></td><td>Altera a Legislação Tributária Federal.</td><td>Pis e Cofins Cumulativo</td><td>PIS; CUMULATIVO</td></tr>
+            <tr><td><a target="_blank" href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=127905">IN RFB Nº 2121</a></td><td>Consolida as normas sobre a apuração, a cobrança, a fiscalização, a arrecadação e a administração da Contribuição para o PIS/Pasep, da Cofins, da Contribuição para o PIS/Pasep-Importação e da Cofins-Importação.</td><td>Consolidação das normas de apuração, a cobrança, a fiscalização, a arrecadação e a administração da Contribuição para o PIS/Pasep, da Cofins, da Contribuição para o PIS/Pasep-Importação e da Cofins-Importação.</td><td>PIS/PASEP; COFINS; CONSOLIDAÇÃO; NORMAS; APURAÇÃO; COBRANÇA; FISCALIZAÇÃO;</td></tr>
+            <tr><td><a target="_blank" href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=132085">IN RFB Nº 2152</a></td><td>Altera a Instrução Normativa RFB nº 2.121, de 15 de dezembro de 2022, que consolida as normas sobre a apuração, a cobrança, a fiscalização, a arrecadação e a administração da Contribuição para o PIS/Pasep, da Cofins, da Contribuição para o PIS/Pasep-Importação e da Cofins-Importação.</td><td>Alteração da IN 2121</td><td>ALTERAÇÃO; IN 2121</td></tr>
+          </tbody>
+        </table>
+        
+        <table class="table tabela-menu table-bordered" id="tabela-cofins" style="display:none">
+          <thead class="table-info">
+            <th>Legislação</th>
+            <th>Ementa</th>
+            <th>Resumo</th>
+            <th>Palavras-chaves</th>
+          </thead>
+          <tbody>
+            <tr><td><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/leis/2003/l10.833.htm">Lei nº 10.833</a></td><td>Altera a Legislação Tributária Federal e dá outras providências.</td><td>Cobrança não-cumulativa da Cofins</td><td>COFINS; NÃO-CUMULATIVO</td></tr>
+            <tr><td><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.865.htm#:~:text=LEI%20N%C2%BA%2010.865%2C%20DE%2030%20DE%20ABRIL%20DE%202004&text=Disp%C3%B5e%20sobre%20a%20Contribui%C3%A7%C3%A3o%20para,servi%C3%A7os%20e%20d%C3%A1%20outras%20provid%C3%AAncias.">Lei nº 10.865</a></td><td>Dispõe sobre a Contribuição para os Programas de Integração Social e de Formação do Patrimônio do Servidor Público e a Contribuição para o Financiamento da Seguridade Social incidentes sobre a importação de bens e serviços e dá outras providências.</td><td>Pis/Pasep e Cofins na importação de bens e serviços</td><td>PIS/PASEP; IMPORTAÇÃO; BENS; SERVIÇOS</td></tr>
+            <tr><td><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/leis/l9718compilada.htm">LEI Nº 9.718</a></td><td>Altera a Legislação Tributária Federal.</td><td>Pis e Cofins Cumulativo</td><td>PIS; CUMULATIVO</td></tr>
+            <tr><td><a target="_blank" href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=127905">IN RFB Nº 2121</a></td><td>Consolida as normas sobre a apuração, a cobrança, a fiscalização, a arrecadação e a administração da Contribuição para o PIS/Pasep, da Cofins, da Contribuição para o PIS/Pasep-Importação e da Cofins-Importação.</td><td>Consolidação das normas de apuração, a cobrança, a fiscalização, a arrecadação e a administração da Contribuição para o PIS/Pasep, da Cofins, da Contribuição para o PIS/Pasep-Importação e da Cofins-Importação.</td><td>PIS/PASEP; COFINS; CONSOLIDAÇÃO; NORMAS; APURAÇÃO; COBRANÇA; FISCALIZAÇÃO;</td></tr>
+            <tr><td><a target="_blank" href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=132085">IN RFB Nº 2152</a></td><td>Altera a Instrução Normativa RFB nº 2.121, de 15 de dezembro de 2022, que consolida as normas sobre a apuração, a cobrança, a fiscalização, a arrecadação e a administração da Contribuição para o PIS/Pasep, da Cofins, da Contribuição para o PIS/Pasep-Importação e da Cofins-Importação.</td><td>Alteração da IN 2121</td><td>ALTERAÇÃO; IN 2121</td></tr>
+          </tbody>
+        </table>
+        
+        <table class="table tabela-menu table-bordered" id="tabela-inss" style="display:none">
+          <thead class="table-info">
+            <th>Legislação</th>
+            <th>Ementa</th>
+            <th>Resumo</th>
+            <th>Palavras-chaves</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a target="_blank" href="http://www.planalto.gov.br/ccivil_03/leis/l8213cons.htm">LEI Nº 8.213 DE 24 DE JULHO DE 1991</td>
+              <td>Dispoe sobre...</td>
+              <td>Trata-se...</td>
+              <td>Imposto de renda</td>
+            </tr>
+            <tr>
+              <td>Pizza</td>
+              <td>B</td>
+              <td>C</td>
+              <td>D</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+    </html>

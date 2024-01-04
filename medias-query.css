@@ -1,0 +1,133 @@
+@media (max-width: 1060px){
+  nav .logo{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    }
+    
+    nav .navigation .menu{
+      position: fixed;
+      display: block;
+      background: #23252b;
+      min-width: 350px;
+      height: 100vh;
+      top: 0;
+      left: -100%;
+      padding: 90px 50px;
+      visibility: hidden;
+      overflow-y: auto;
+      transition: 0.5s;
+      transition-property: left, visibility;
+    }
+  
+    nav.sticky .navigation{
+      line-height: 75px;
+    }
+  
+    nav .navigation .menu.active{
+      left: 0;
+      visibility: visible;
+    }
+  
+    .menu-item{
+      position: relative;
+    }
+  
+    .menu-item .sub-menu{
+      opacity: 1;
+      position: relative;
+      top: 0;
+      transform: translateX(10px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
+      display: none;
+    }
+  
+    nav.sticky .menu-item .sub-menu{
+      top: 0;
+    }
+  
+    .menu-item:hover .sub-menu{
+      transform: translateX(10px);
+    }
+  
+    .menu-item .sub-menu .sub-item{
+      box-shadow: none;
+    }
+  
+    .menu-item .sub-menu .sub-item:hover{
+      background: none;
+    }
+  
+    .menu-item .sub-menu .sub-item a:hover{
+      color: #4080EF;
+      transition: 0.3s;
+    }
+  
+    .more .more-menu{
+      opacity: 1;
+      position: relative;
+      left: 0;
+      transform: translateY(0);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      display: none;
+    }
+  
+    .more .more-menu .more-item{
+      box-shadow: none;
+    }
+  
+    .more .more-menu .more-item:hover{
+      background: none;
+    }
+  
+    .more .more-menu .more-item a{
+      margin-left: 20px;
+    }
+  
+    .close-btn{
+      position: absolute;
+      background: url(imagens/close.svg)no-repeat;
+      width: 40px;
+      height: 40px;
+      background-size: 25px;
+      background-position: center;
+      top: 0;
+      left: 0;
+      margin: 25px;
+      cursor: pointer;
+    }
+  
+    .menu-btn{
+      background: url(imagens/menu.svg)no-repeat;
+      width: 40px;
+      height: 40px;
+      background-size: 30px;
+      background-position: center;
+      cursor: pointer;
+      display: block;
+    }
+  
+    nav{
+      padding: 15px 20px;
+    }
+  
+    nav.sticky{
+      padding: 10px 20px;
+    }
+    
+    .desktop-image {
+      display: none; /* Oculta a imagem na versão mobile */
+    }
+  
+    .mobile-image {
+      display: block; /* Mostra a imagem na versão mobile */
+    }
+  }
+        

@@ -1,0 +1,43 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+nav{
+  font-family: 'Roboto', sans-serif;
+}
+
+.collapse {
+  justify-content: space-between;
+}
+
+header{
+    margin-bottom: -1%;
+    text-align: center;
+    background-image: url("https://media.tenor.com/f0cKyHniahEAAAAC/background-khaoticfuture.gif");
+}
+
+h1 {
+    height: 100%;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler-icon{
+    background-image: url(imagens/menu.svg);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link {
+    color: #fff;
+}
+
+a.nav-link.active:hover{
+    color: #02afe2;
+}
+

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #f5f8ff;
+}
+
+.container{
+    gap: 20px;
+    display: flex;
+    margin: 0 40px;
+    max-width: 600px;
+    flex-direction: column;
+}
+
+.container h1{
+    color: #333;
+    margin-top: 40px;
+}
+
+.container .tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+}
+
+.container .tab input{
+    appearance: none;
+}
+.container .tab label{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.container .tab label::after{
+    content: '+';
+    right: 20px;
+    font-size: 2em;
+    position: absolute;
+    justify-content: center;
+    color: rgb(0, 0, 0, 0.1);
+    transition: transform 1s;
+}
+
+.container .tab:hover label::after{
+    color: #333;
+}
+
+.container .tab input:checked ~ label::after{
+    color: #fff;
+    transform: rotate(135deg);
+}
+
+.container .tab label h2{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3c8ce7, #00eaff);
+}
+
+.container .tab input[type="checkbox"] {
+    display: none;
+}
+
+.container .tab input[type="checkbox"]:checked ~ .content {
+    max-height: 100vh;
+}
+
+.container .tab input[type="checkbox"]:checked + label::after {
+    transform: rotate(135deg);
+    color: #fff;
+}
+
+.container .tab input:checked ~ label h2{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 8em;
+    position: absolute;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255, 0.2);
+}
+
+.container .tab label h3{
+    z-index: 10;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .tab input:checked ~ label h3{
+    color: #333;
+    background: #fff;
+    padding: 2px 10px;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.container .tab .content {
+    max-height: 0;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.container .tab input:checked ~ .content{
+    max-height: 100vh;
+}
+
+.container .tab .content p{
+    color: #333;
+    z-index: 10;
+    padding: 10px 0;
+    position: relative;
+}
+
+.container .tab input:checked ~ .content p{
+    color: #fff;
+}  
